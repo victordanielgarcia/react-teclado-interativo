@@ -1,0 +1,72 @@
+.keyboard-background-default {
+	width: 100vw;
+	display: flex;
+	gap: 0.1rem;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	.container {
+		display: flex;
+		gap: 3rem;
+
+		.group {
+			display: flex;
+
+			.default-key {
+				width: 2rem;
+				height: 2rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 0.5rem 0.5rem;
+				margin: 0rem 0.2rem;
+				background-color: white;
+				font-weight: 500;
+				font-size: 0.8rem;
+				text-align: center;
+				color: #6e768a;
+				box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+				cursor: pointer;
+
+				&.activeDown {
+					background-color: red !important;
+					color: white !important;
+				}
+				&.activeHistory {
+					background-color: orange;
+					color: white;
+				}
+			}
+		}
+	}
+
+	.registry {
+		margin: 2rem;
+		width: 66rem;
+		background-color: white;
+		box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+
+		.title {
+			font-weight: bold;
+			color: #6e768a;
+			padding: 1rem;
+		}
+
+		.container-registry {
+			min-height: 0.5rem;
+			max-height: 15rem;
+			padding-bottom: 1rem;
+			overflow: auto;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.subTitle {
+			font-weight: 400;
+			color: #6e768a;
+			font-size: 0.9rem;
+			padding: 0.2rem 1rem;
+		}
+	}
+}
