@@ -1,4 +1,28 @@
-export const keyboard = [
+export interface IContent {
+	title?: string;
+	key?: string;
+	width?: string;
+}
+
+export interface IGroup {
+	groupOne?: IContent[];
+	groupTwo?: IContent[];
+	groupThree?: IContent[];
+	groupFour?: IContent[];
+	groupFive?: IContent[];
+	groupSix?: IContent[];
+}
+
+export interface IKeyboard {
+	lineOne?: IGroup[];
+	lineTwo?: IGroup[];
+	lineThree?: IGroup[];
+	lineFour?: IGroup[];
+	lineFive?: IGroup[];
+	lineSix?: IGroup[];
+}
+
+export const keyboard: IKeyboard[] = [
 	{
 		lineOne: [
 			{ groupOne: [{ title: 'Esc', key: '27' }] },
@@ -39,7 +63,7 @@ export const keyboard = [
 		lineTwo: [
 			{
 				groupOne: [
-					{ title: '-', key: '192' },
+					{ title: `' "`, key: '192' },
 					{ title: '1 !', key: '49' },
 					{ title: '2 @', key: '50' },
 					{ title: '3 #', key: '51' },
@@ -114,7 +138,7 @@ export const keyboard = [
 				],
 			},
 			{
-				groupTwo: [{ title: 'Vazio', width: '8.8rem' }],
+				groupTwo: [{ title: '', width: '8.8rem' }],
 			},
 		],
 	},
@@ -138,7 +162,7 @@ export const keyboard = [
 					{ title: 'Shift', key: '16', width: '4.8rem' },
 				],
 			},
-			{ groupTwo: [{ title: 'Top' }, { title: 'Top', key: '38' }, { title: 'Top' }] },
+			{ groupTwo: [{ title: '' }, { title: 'Top', key: '38' }, { title: '' }] },
 		],
 	},
 	{
@@ -155,7 +179,13 @@ export const keyboard = [
 					{ title: 'Ctrl', key: '17' },
 				],
 			},
-			{ groupTwo: [{ title: 'E' }, { title: 'Baixo' }, { title: 'D' }] },
+			{
+				groupTwo: [
+					{ title: 'E', key: '37' },
+					{ title: 'Baixo', key: '40' },
+					{ title: 'D', key: '39' },
+				],
+			},
 		],
 	},
 ];
