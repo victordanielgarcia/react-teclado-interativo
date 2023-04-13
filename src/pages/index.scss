@@ -4,21 +4,36 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-
 	.header {
 		background-color: white;
 		box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
 		width: 100%;
 		margin-bottom: 2rem;
-
 		.container {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			padding: 1rem;
+			padding: 0.75rem 2rem;
+			.img-title {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.img {
+					height: 2rem;
+					margin-right: 2rem;
+				}
+				.title {
+					font-weight: bold;
+					font-size: 1.2rem;
+					color: #6e768a;
+				}
+			}
+			.title {
+				font-size: 1.2rem;
+				color: #6e768a;
+			}
 		}
 	}
-
 	.keyboard {
 		display: flex;
 		gap: 0.1rem;
@@ -29,17 +44,14 @@
 		box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
 		padding: 1rem;
 		border-radius: 0.3rem;
-
 		.container {
 			display: flex;
-			gap: 3rem;
-
+			gap: 2rem;
 			.group {
 				display: flex;
-
 				.default-key {
-					width: 2rem;
-					height: 2rem;
+					width: 1.7rem;
+					height: 1.7rem;
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -52,7 +64,12 @@
 					color: #414550;
 					box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
 					cursor: pointer;
-
+					.icon {
+						font-size: 1.3rem;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
 					&.activeDown {
 						background-color: red !important;
 						color: white !important;
@@ -69,20 +86,17 @@
 			}
 		}
 	}
-
 	.registry {
 		margin: 2rem;
-		width: 68.2rem;
+		width: 60rem;
 		border-radius: 0.3rem;
 		background-color: white;
 		box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
-
 		.title {
 			font-weight: bold;
 			color: #6e768a;
 			padding: 1rem;
 		}
-
 		.container-registry {
 			min-height: 0.5rem;
 			max-height: 15rem;
@@ -91,7 +105,6 @@
 			display: flex;
 			flex-direction: column;
 		}
-
 		.subTitle {
 			font-weight: 400;
 			color: #6e768a;

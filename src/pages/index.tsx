@@ -1,3 +1,5 @@
+import logo from '../assets/logo.png';
+import Icons from '../components/icons/icons';
 import './index.scss';
 import { IContent, IGroup, keyboard } from './keys';
 import * as React from 'react';
@@ -13,7 +15,7 @@ const Index: React.FC = () => {
 
 					return (
 						<div key={index} className={`default-key ${keyDownItem} ${historyDownItem} ${title}`} style={{ width: item.width }}>
-							{item.title}
+							{item.title ? item.title : <Icons className='icon' iconName={item.icon ? item.icon : ''} />}
 						</div>
 					);
 				})}
@@ -75,10 +77,10 @@ const Index: React.FC = () => {
 			e.preventDefault();
 		});
 
-		document.oncontextmenu = function (e) {
-			e.preventDefault();
-			return false;
-		};
+		// document.oncontextmenu = function (e) {
+		// 	e.preventDefault();
+		// 	return false;
+		// };
 	}, []);
 
 	React.useEffect(() => {
@@ -87,11 +89,15 @@ const Index: React.FC = () => {
 
 	return (
 		<div className='keyboard-background-default'>
-			{JSON.stringify(keyDown)}
 			<div className='header'>
 				<div className='container'>
-					<div>Testador de Teclado Online</div>
-					<div>Desenvolvido por: Victor Daniel</div>
+					<div className='img-title'>
+						<img className='img' src={logo} />
+						<div className='title'>Testador de Teclado ABNT</div>
+					</div>
+					<div className='title'>
+						Desenvolvido por: <b>Victor Daniel</b>
+					</div>
 				</div>
 			</div>
 			<div className='keyboard'>
@@ -111,8 +117,13 @@ const Index: React.FC = () => {
 			<div className='registry'>
 				<div className='title'>Registro de Eventos</div>
 				<div className='container-registry'>
-					<div className='subTitle'>09/04/2023 10:10 - Registro de tecla ( A )</div>
-					<div className='subTitle'>09/04/2023 10:10 - Registro de tecla ( B )</div>
+					{historyDown.map((item, index: number) => {
+						return (
+							<div key={index} className='subTitle'>
+								09/04/2023 10:10 - Registro de tecla ( {item} )
+							</div>
+						);
+					})}
 				</div>
 			</div>
 		</div>

@@ -1,5 +1,6 @@
 export interface IContent {
 	title?: string;
+	icon?: string;
 	key?: string;
 	width?: string;
 }
@@ -76,7 +77,7 @@ export const keyboard: IKeyboard[] = [
 					{ title: '0 $', key: '48' },
 					{ title: '- -', key: '189' },
 					{ title: '+ =', key: '187' },
-					{ title: 'Backspace', key: '8', width: '7.6rem' },
+					{ icon: 'BsArrowLeft', key: '8', width: '4.6rem' },
 				],
 			},
 			{
@@ -92,7 +93,7 @@ export const keyboard: IKeyboard[] = [
 		lineThree: [
 			{
 				groupOne: [
-					{ title: 'Tab', key: '9', width: '4rem' },
+					{ title: 'Tab', key: '9', width: '3rem' },
 					{ title: 'Q', key: '81' },
 					{ title: 'W', key: '87' },
 					{ title: 'E', key: '69' },
@@ -105,7 +106,7 @@ export const keyboard: IKeyboard[] = [
 					{ title: 'P', key: '80' },
 					{ title: '-', key: '219' },
 					{ title: '[ }', key: '221' },
-					{ title: '<', key: '13', width: '5.6rem' },
+					{ icon: 'BsArrowReturnLeft', key: '13', width: '3.3rem' },
 				],
 			},
 			{
@@ -121,7 +122,7 @@ export const keyboard: IKeyboard[] = [
 		lineFour: [
 			{
 				groupOne: [
-					{ title: 'Capslock', key: '20', width: '5.6rem' },
+					{ title: 'Capslock', key: '20', width: '4.1rem' },
 					{ title: 'A', key: '65' },
 					{ title: 'S', key: '83' },
 					{ title: 'D', key: '68' },
@@ -134,11 +135,11 @@ export const keyboard: IKeyboard[] = [
 					{ title: 'Ç', key: '186' },
 					{ title: '~ ^', key: '222' },
 					{ title: '] {', key: '220' },
-					{ title: '<', key: '13', width: '4rem' },
+					{ title: '<', key: '13', width: '2.2rem' },
 				],
 			},
 			{
-				groupTwo: [{ title: '', width: '8.8rem' }],
+				groupTwo: [{ title: '', width: '7.85rem' }],
 			},
 		],
 	},
@@ -146,7 +147,7 @@ export const keyboard: IKeyboard[] = [
 		lineFive: [
 			{
 				groupOne: [
-					{ title: 'Shift', key: '16', width: '4.8rem' },
+					{ title: 'Shift', key: '16', width: '3.15rem' },
 					{ title: '|', key: '226' },
 					{ title: 'Z', key: '90' },
 					{ title: 'X', key: '88' },
@@ -159,10 +160,10 @@ export const keyboard: IKeyboard[] = [
 					{ title: '. >', key: '190' },
 					{ title: '; :', key: '191' },
 					{ title: '/ ?', key: '193' },
-					{ title: 'Shift', key: '16', width: '4.8rem' },
+					{ title: 'Shift', key: '16', width: '3.15rem' },
 				],
 			},
-			{ groupTwo: [{ title: '' }, { title: 'Top', key: '38' }, { title: '' }] },
+			{ groupTwo: [{ title: '' }, { icon: 'GoArrowUp', key: '38' }, { title: '' }] },
 		],
 	},
 	{
@@ -170,20 +171,20 @@ export const keyboard: IKeyboard[] = [
 			{
 				groupOne: [
 					{ title: 'Ctrl', key: '17' },
-					{ title: 'Win', key: '91' },
+					{ icon: 'FaWindows', key: '91' },
 					{ title: 'Alt', key: '18' },
-					{ title: 'Space', key: '32', width: '28rem' },
+					{ title: 'Space', key: '32', width: '23.3rem' },
 					{ title: 'AltGr', key: '18' },
-					{ title: 'Win', key: '91' },
+					{ icon: 'FaWindows', key: '91' },
 					{ title: 'Prnt', key: '93' },
 					{ title: 'Ctrl', key: '17' },
 				],
 			},
 			{
 				groupTwo: [
-					{ title: 'E', key: '37' },
-					{ title: 'Baixo', key: '40' },
-					{ title: 'D', key: '39' },
+					{ icon: 'GoArrowLeft', key: '37' },
+					{ icon: 'GoArrowDown', key: '40' },
+					{ icon: 'GoArrowRight', key: '39' },
 				],
 			},
 		],
