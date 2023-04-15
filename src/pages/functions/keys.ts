@@ -3,6 +3,7 @@ export interface IContent {
 	icon?: string;
 	key?: string;
 	width?: string;
+	customStyle?: string;
 }
 
 export interface IGroup {
@@ -58,6 +59,9 @@ export const keyboard: IKeyboard[] = [
 					{ title: 'Pause', key: '19' },
 				],
 			},
+			{
+				groupSix: [{ title: '' }, { title: '' }, { title: '' }, { title: '' }],
+			},
 		],
 	},
 	{
@@ -77,7 +81,7 @@ export const keyboard: IKeyboard[] = [
 					{ title: '0 $', key: '48' },
 					{ title: '- -', key: '189' },
 					{ title: '+ =', key: '187' },
-					{ icon: 'BsArrowLeft', key: '8', width: '4.6rem' },
+					{ icon: 'BsArrowLeft', key: '8', width: '5.6rem' },
 				],
 			},
 			{
@@ -87,13 +91,21 @@ export const keyboard: IKeyboard[] = [
 					{ title: 'Page Up', key: '33' },
 				],
 			},
+			{
+				groupThree: [
+					{ title: 'Num Lock', key: '144' },
+					{ title: '/', key: '111' },
+					{ title: '*', key: '106' },
+					{ title: '-', key: '109' },
+				],
+			},
 		],
 	},
 	{
 		lineThree: [
 			{
 				groupOne: [
-					{ title: 'Tab', key: '9', width: '3rem' },
+					{ title: 'Tab', key: '9', width: '4.1rem' },
 					{ title: 'Q', key: '81' },
 					{ title: 'W', key: '87' },
 					{ title: 'E', key: '69' },
@@ -106,7 +118,7 @@ export const keyboard: IKeyboard[] = [
 					{ title: 'P', key: '80' },
 					{ title: '-', key: '219' },
 					{ title: '[ }', key: '221' },
-					{ icon: 'BsArrowReturnLeft', key: '13', width: '3.3rem' },
+					{ icon: 'BsArrowReturnLeft', key: '13', width: '4rem' },
 				],
 			},
 			{
@@ -116,13 +128,21 @@ export const keyboard: IKeyboard[] = [
 					{ title: 'Page Down', key: '34' },
 				],
 			},
+			{
+				groupThree: [
+					{ title: '7', key: '103' },
+					{ title: '8', key: '104' },
+					{ title: '9', key: '105' },
+					{ title: '+', key: '107' },
+				],
+			},
 		],
 	},
 	{
 		lineFour: [
 			{
 				groupOne: [
-					{ title: 'Capslock', key: '20', width: '4.1rem' },
+					{ title: 'Capslock', key: '20', width: '5rem' },
 					{ title: 'A', key: '65' },
 					{ title: 'S', key: '83' },
 					{ title: 'D', key: '68' },
@@ -135,11 +155,19 @@ export const keyboard: IKeyboard[] = [
 					{ title: 'Ç', key: '186' },
 					{ title: '~ ^', key: '222' },
 					{ title: '] {', key: '220' },
-					{ title: '<', key: '13', width: '2.2rem' },
+					{ title: ' ', key: '13', width: '3.1rem', customStyle: 'enter' },
 				],
 			},
 			{
-				groupTwo: [{ title: '', width: '7.85rem' }],
+				groupTwo: [{ title: '', width: '8.3rem' }],
+			},
+			{
+				groupThree: [
+					{ title: '4', key: '100' },
+					{ title: '5', key: '101' },
+					{ title: '6', key: '102' },
+					{ title: '.', key: '110' },
+				],
 			},
 		],
 	},
@@ -147,7 +175,7 @@ export const keyboard: IKeyboard[] = [
 		lineFive: [
 			{
 				groupOne: [
-					{ title: 'Shift', key: '16', width: '3.15rem' },
+					{ title: 'Shift', key: '16', width: '4.05rem' },
 					{ title: '|', key: '226' },
 					{ title: 'Z', key: '90' },
 					{ title: 'X', key: '88' },
@@ -160,10 +188,18 @@ export const keyboard: IKeyboard[] = [
 					{ title: '. >', key: '190' },
 					{ title: '; :', key: '191' },
 					{ title: '/ ?', key: '193' },
-					{ title: 'Shift', key: '16', width: '3.15rem' },
+					{ title: 'Shift', key: '16', width: '4.05rem' },
 				],
 			},
 			{ groupTwo: [{ title: '' }, { icon: 'GoArrowUp', key: '38' }, { title: '' }] },
+			{
+				groupThree: [
+					{ title: '1', key: '97' },
+					{ title: '2', key: '98' },
+					{ title: '3', key: '99' },
+					{ title: 'Enter', key: '13' },
+				],
+			},
 		],
 	},
 	{
@@ -173,7 +209,7 @@ export const keyboard: IKeyboard[] = [
 					{ title: 'Ctrl', key: '17' },
 					{ icon: 'FaWindows', key: '91' },
 					{ title: 'Alt', key: '18' },
-					{ title: 'Space', key: '32', width: '23.3rem' },
+					{ title: 'Space', key: '32', width: '23rem' },
 					{ title: 'AltGr', key: '18' },
 					{ icon: 'FaWindows', key: '91' },
 					{ title: 'Prnt', key: '93' },
@@ -185,6 +221,14 @@ export const keyboard: IKeyboard[] = [
 					{ icon: 'GoArrowLeft', key: '37' },
 					{ icon: 'GoArrowDown', key: '40' },
 					{ icon: 'GoArrowRight', key: '39' },
+				],
+			},
+			{
+				groupThree: [
+					{ title: '0', key: '96', customStyle: 'keyZeroRight' },
+					{ title: ' ', key: '96', customStyle: 'keyZeroLeft' },
+					{ title: 'Del', key: '46' },
+					{ title: ' ', key: '13', customStyle: 'enter' },
 				],
 			},
 		],

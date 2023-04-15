@@ -3,7 +3,16 @@
 	"jsxSingleQuote": true,
 	"bracketSameLine": true,
 	"singleAttributePerLine": false,
-	"importOrder": ["<THIRD_PARTY_MODULES>"],
+	"importOrder": [
+		"<THIRD_PARTY_MODULES>",
+		"react$",
+		"^primereact/(.*)$",
+		"^components/",
+		"[./]components/",
+		"^functions/",
+		"[./]functions/",
+		"./(.*)$"
+	],
 	"importOrderSeparation": true,
 	"importOrderSortSpecifiers": true
 }
