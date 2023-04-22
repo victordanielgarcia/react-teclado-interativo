@@ -15,10 +15,20 @@ const Index: React.FC = () => {
 	const [keyDown, setKeyDown] = React.useState<string[]>([]);
 	const [historyDown, setHistoryDown] = React.useState<string[]>([]);
 
+	function setFocusOnDiv() {
+		document?.getElementById('keyboard-focus')?.focus();
+	}
+
+	React.useEffect(() => {
+		setFocusOnDiv();
+	}, []);
+
 	return (
 		<div
+			id='keyboard-focus'
 			className='keyboard-background-default'
 			tabIndex={0}
+			autoFocus={true}
 			onKeyDown={(event) => handleKeyDown(event, keyDown, historyDown, setHistoryDown, setKeyDown)}
 			onKeyUp={(event) => handleKeyUp(event, keyDown, setKeyDown)}>
 			<Header />
