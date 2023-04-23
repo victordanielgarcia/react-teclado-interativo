@@ -18,7 +18,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 ----
 
-## ⚙️ Tecnologias
+<h3> ⚙️ Tecnologias </h3>
 
 ![REACT](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -29,7 +29,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 ----
 
-<h3> 🤝 Colaboradores </h3>
+<h3> 💼 Desenvolvedores </h3>
 
 Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
